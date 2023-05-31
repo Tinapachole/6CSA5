@@ -15,12 +15,10 @@ public class CookiesPractice {
 		System.out.println(allCookies.size());
        for(Cookie singleCooky:allCookies)
     	   System.out.println(singleCooky.getName());
-       Cookie cooky1= new Cookie("selenium","6");
-       Cookie cooky2= new Cookie("manual","5");
-       Cookie cooky3= new Cookie("java","3");
-       driver.manage().addCookie(cooky1);
-       driver.manage().addCookie(cooky2);
-       driver.manage().addCookie(cooky3);
+       Cookie cooky= new Cookie("selenium","6");
+       
+       driver.manage().addCookie(cooky);
+       
       
        allCookies= driver.manage().getCookies();
        System.out.println(allCookies.size());
